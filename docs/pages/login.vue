@@ -1,10 +1,8 @@
 <template>
-  <div>Hello World</div>
+  <div>WHat</div>
 </template>
 
-<script lang="ts" setup>
-userState();
-
+<script setup lang="ts">
 definePageMeta({
   layout: false,
 });

@@ -1,10 +1,14 @@
 <template>
   <div>
-    <NuxtLayout><NuxtPage id="app" /></NuxtLayout>
+    <NuxtLayout>
+      <NuxtPage id="app" />
+    </NuxtLayout>
   </div>
 </template>
 
-<script></script>
+<script lang="ts" setup>
+const user = userState();
+</script>
 
 <style>
 html,
@@ -13,6 +17,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #071630; /* midnight blue background */
-  color: #021e1d; /* dark green color scheme */
+  color: white; /* #021e1d dark green color scheme */
 }
 </style>
