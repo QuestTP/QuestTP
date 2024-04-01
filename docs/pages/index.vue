@@ -2,6 +2,10 @@
   <div>Hello World</div>
 </template>
 
-<script></script>
+<script setup>
+definePageMeta({
+  layout: "navbar",
+});
+</script>
 
 <style scoped></style>
