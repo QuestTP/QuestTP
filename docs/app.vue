@@ -7,7 +7,11 @@
 </template>
 
 <script lang="ts" setup>
-const user = userState();
+definePageMeta({
+  head: {
+    link: { rel: "icon", type: "image.png", sizes: "32x32" },
+  },
+});
 </script>
 
 <style>

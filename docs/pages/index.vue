@@ -3,10 +3,8 @@
 </template>
 
 <script lang="ts" setup>
-userState();
-
 definePageMeta({
-  layout: false,
+  layout: "navbar",
 });
 </script>
 
