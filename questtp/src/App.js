@@ -1,20 +1,26 @@
+// App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import SignIn from "./components/Auth/SignIn";
-import SignUp from "./components/Auth/SignUp";
-import Island from "./components/Game/Island";
-import Tutorial from "./components/Tutorial/Tutorial";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SignIn from "./pages/AuthPage/SignIn";
+import SignUp from "./pages/AuthPage/SignUp";
+import TutorialPage from "./pages/TutorialPage";
+import IslandPage from "./pages/IslandPage";
+import OpenWorldPage from "./pages/OpenWorldPage";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/signin" component={SignIn} />
-        <Route path="/signup" component={SignUp} />
-        <Route path="/tutorial" component={Tutorial} />
-        <Route path="/island" component={Island} />
-        // Add more routes as needed
-      </Switch>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/tutorial" element={<TutorialPage />} />
+        <Route path="/island" element={<IslandPage />} />
+        <Route path="/openworld" element={<OpenWorldPage />} />
+        {/* Add other routes as necessary */}
+      </Routes>
     </Router>
   );
 }

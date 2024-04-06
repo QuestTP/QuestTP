@@ -1,20 +1,14 @@
 import React from "react";
-// Import any shared components used on this page
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
-const HomePage = () => {
+function HomePage() {
   return (
     <div>
-      <Navbar />
-      <main>
-        <h1>Welcome to QuestTP</h1>
-        <p>Embark on your journey of task completion and island exploration.</p>
-        // Additional content and components unique to the HomePage
-      </main>
-      <Footer />
+      <h1>Welcome to QuestTP</h1>
+      <p>Embark on your productivity journey with gamification.</p>
+      <Link to="/signin">Sign In</Link> | <Link to="/signup">Sign Up</Link>
     </div>
   );
-};
+}
 
 export default HomePage;
